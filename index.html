@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DRAKOMINE – FULL OF MADNESS OF UNIQUENESS</title>
+    <link rel="stylesheet" href="styles/main.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700&family=Roboto+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+</head>
+<body>
+
+    <header>
+        <nav class="container">
+            <a href="#" class="logo">DRAKOMINE</a>
+            <ul class="nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#experiences">Experiences</a></li>
+                <li><a href="#commands">Commands</a></li>
+                <li><a href="#shops">Shops</a></li>
+                <li><a href="#vip">VIP Status</a></li>
+                <li><a href="#gallery">Gallery</a></li>
+            </ul>
+            <div class="menu-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section id="home" class="hero-section">
+            <div class="hero-content">
+                <h1>DRAKOMINE – FULL OF MADNESS OF UNIQUENESS</h1>
+                <p class="tagline">The ultimate Minecraft experience awaits. Join a community of builders, adventurers, and strategists.</p>
+                <div class="ip-container">
+                    <span class="ip-address">drako.mine.bz:25531</span>
+                    <button class="copy-btn" onclick="copyIP()">Copy IP</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="experiences" class="section">
+            <div class="container">
+                <h2>Our Unique Experiences</h2>
+                <div class="grid-container">
+                    <div class="card">
+                        <i class="fa-solid fa-gamepad"></i>
+                        <h3>Seamless Crossplay</h3>
+                        <p>Connect and adventure with friends on both Java and Bedrock editions of Minecraft.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-shield-halved"></i>
+                        <h3>Secure Land Protection</h3>
+                        <p>Claim your builds and defend your territory with our advanced land claim system.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-people-group"></i>
+                        <h3>Dynamic Team System</h3>
+                        <p>Forge alliances, collaborate on projects, and conquer challenges together.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-sack-dollar"></i>
+                        <h3>Player-Driven Economy</h3>
+                        <p>Establish your own chest-based shops and participate in a dynamic economy.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-swords"></i>
+                        <h3>Balanced PvP Control</h3>
+                        <p>Toggle PvP on or off for yourself, ensuring you can enjoy both peaceful building and thrilling combat.</p>
+                    </div>
+                    <div class="card">
+                        <i class="fa-solid fa-star-half-stroke"></i>
+                        <h3>Exclusive VIP Status</h3>
+                        <p>Elevate your journey with VIP and VVIP ranks, unlocking custom cosmetics, unique kits, and priority support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="commands" class="section">
+            <div class="container">
+                <h2>Useful Commands</h2>
+                <p class="section-description">Navigate, manage your team, and control your economy with these essential commands.</p>
+                
+                <div class="command-grid">
+                    <div class="command-group">
+                        <h3>Economy & General</h3>
+                        <ul>
+                            <li><span class="command-name">/balance</span> – Check your current in-game currency.</li>
+                            <li><span class="command-name">/pay &lt;player&gt; &lt;amount&gt;</span> – Transfer money to another player.</li>
+                            <li><span class="command-name">/toggletp</span> – Enable or disable teleport requests from other players.</li>
+                            <li><span class="command-name">/backpack</span> – Access your portable extra inventory.</li>
+                            <li><span class="command-name">/shops</span> – View a list of available player shops.</li>
+                            <li><span class="command-name">/pvp on</span> – Activate Player vs. Player combat for yourself.</li>
+                            <li><span class="command-name">/pvp off</span> – Deactivate Player vs. Player combat for yourself.</li>
+                            <li><span class="command-name">/qs find &lt;item&gt;</span> – Find item in shop.</li>
+                        </ul>
+                    </div>
+                    <div class="command-group">
+                        <h3>Navigation & Teleportation</h3>
+                        <ul>
+                            <li><span class="command-name">/warp spawn</span> – Instantly return to the server spawn point.</li>
+                            <li><span class="command-name">/sethome</span> – Designate your personal home location.</li>
+                            <li><span class="command-name">/home</span> – Teleport directly back to your designated home.</li>
+                            <li><span class="command-name">/tpa &lt;player&gt;</span> – Send a request to teleport to another player.</li>
+                            <li><span class="command-name">/tpahere &lt;player&gt;</span> – Ask a player to teleport to your location.</li>
+                            <li><span class="command-name">/tpaccept / /tpdeny</span> – Respond to incoming teleport requests.</li>
+                            <li><span class="command-name">/lobby</span> – Return to the central server hub.</li>
+                        </ul>
+                    </div>
+                    <div class="command-group">
+                        <h3>Land Claim Management</h3>
+                        <ul>
+                            <li><span class="command-name">/claim</span> – Secure the land chunk you are currently standing on.</li>
+                            <li><span class="command-name">/unclaim</span> – Release a previously claimed land chunk.</li>
+                            <li><span class="command-name">/trust &lt;player&gt;</span> – Grant building and access permissions to a player on your claimed land.</li>
+                            <li><span class="command-name">/untrust &lt;player&gt;</span> – Revoke building and access permissions from a player.</li>
+                            <li><span class="command-name">/claimslist</span> – View a comprehensive list of all your owned claimed lands.</li>
+                            <li><span class="command-name">/trustlist</span> – View a comprehensive list of all players you have given access to your land claims.</li>
+                        </ul>
+                    </div>
+                    <div class="command-group">
+                        <h3>Team System Operations</h3>
+                        <ul>
+                            <li><span class="command-name">/team create &lt;name&gt;</span> – Establish your own new team.</li>
+                            <li><span class="command-name">/team invite &lt;player&gt;</span> – Extend an invitation for a player to join your team.</li>
+                            <li><span class="command-name">/team join &lt;name&gt;</span> – Accept an invitation to become a member of a team.</li>
+                            <li><span class="command-name">/team kick &lt;player&gt;</span> – Remove a player from your team.</li>
+                            <li><span class="command-name">/team leave</span> – Voluntarily depart from your current team.</li>
+                            <li><span class="command-name">/team promote &lt;player&gt;</span> – Designate another team member as a leader.</li>
+                            <li><span class="command-name">/team chat</span> – Engage in private conversation exclusively with your team members.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <section id="shops" class="section">
+            <div class="container">
+                <h2>Player Shops</h2>
+                <div class="shops-grid">
+                    <div class="shops-card">
+                        <h3>How to Create Your Shop</h3>
+                        <p>1. Place a chest at your desired shop location.</p>
+                        <p>2. Left-click the chest to open the shop creation interface.</p>
+                        <p>3. Follow the on-screen prompts to set your selling item(s) and their prices.</p>
+                    </div>
+                    <div class="shops-card">
+                        <h3>How to Buy/Sell from a Shop</h3>
+                        <p><strong>PC:</strong> Simply Left-click the chest.</p>
+                        <p><strong>Mobile:</strong> Press the signboard above the chest.</p>
+                    </div>
+                    <div class="shops-card">
+                        <h3>Effortless Shop Relocation</h3>
+                        <p><strong>PC:</strong> Shift + Right-Click to gently pick up your villager.</p>
+                        <p><strong>Bedrock:</strong> Sneak + Interact to gently pick up your villager.</p>
+                        <p>Place it anywhere else and effortlessly reconfigure your shop as needed.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="vip" class="section">
+            <div class="container">
+                <h2>Elevate Your Journey</h2>
+                <div class="pricing-grid">
+                    <div class="pricing-card vip">
+                        <h3>VIP Status</h3>
+                        <p class="price">₹60 / Month</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> VIP Tag in Discord and Server</li>
+                            <li><i class="fa-solid fa-check"></i> Can set 2 homes at a time</li>
+                            <li><i class="fa-solid fa-check"></i> Extra inventory L-4 (backpack)</li>
+                            <li><i class="fa-solid fa-check"></i> Can have 30 shops at a time</li>
+                            <li><i class="fa-solid fa-check"></i> 3 extra hearts</li>
+                            <li><i class="fa-solid fa-check"></i> Can use /rtp command (For Free)</li>
+                            <li><i class="fa-solid fa-check"></i> $25 dollar Daily Reward</li>
+                            <li><i class="fa-solid fa-check"></i> Good support</li>
+                        </ul>
+                        <a href="mailto:drakomine150@gmail.com" class="cta-button">Purchase VIP</a>
+                    </div>
+                    <div class="pricing-card vvip">
+                        <h3>VVIP Status</h3>
+                        <p class="price">₹100 / Month</p>
+                        <ul>
+                            <li><i class="fa-solid fa-check"></i> VVIP Tag in Discord and Server</li>
+                            <li><i class="fa-solid fa-check"></i> Can set 3 homes at a time</li>
+                            <li><i class="fa-solid fa-check"></i> Extra inventory L-6 (backpack)</li>
+                            <li><i class="fa-solid fa-check"></i> Can have 50 shops at a time</li>
+                            <li><i class="fa-solid fa-check"></i> 5 extra hearts</li>
+                            <li><i class="fa-solid fa-check"></i> Can use /rtp command (For Free)</li>
+                            <li><i class="fa-solid fa-check"></i> $50 dollar Daily Reward</li>
+                            <li><i class="fa-solid fa-check"></i> Premium support</li>
+                        </ul>
+                        <a href="mailto:drakomine150@gmail.com" class="cta-button">Purchase VVIP</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="gallery" class="section">
+            <div class="container">
+                <h2>Server Gallery</h2>
+                <p class="coming-soon">**Coming Soon!**</p>
+                <p>A section showcasing images and videos of the server's features and community events.</p>
+            </div>
+        </section>
+    </main>
+    
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-info">
+                    <h3>DRAKOMINE</h3>
+                    <p>Experience the madness of uniqueness with DRAKOMINE. A server designed for true adventurers.</p>
+                    <p>Email: <a href="mailto:drakomine150@gmail.com">drakomine150@gmail.com</a></p>
+                    <p>Owner: prantikDas, West Bengal</p>
+                </div>
+                <div class="social-links">
+                    <h3>Connect With Us</h3>
+                    <a href="#" class="social-icon"><i class="fab fa-discord"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-instagram"></i></a>
+                    <a href="#" class="social-icon"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 DRAKOMINE. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="scripts/main.js"></script>
+</body>
+</html>
