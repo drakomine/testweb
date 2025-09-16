@@ -26,16 +26,3 @@ function copyIP() {
         console.error('Failed to copy IP: ', err);
     });
 }
-
-// Add logo dynamically at the end of the script
-const logo = document.createElement("img");
-logo.src = "https://raw.githubusercontent.com/drakomine/Darkmineimage/main/Gemini_Generated_Image_40k3u840k3u840k3.png";
-logo.alt = "Website Logo";
-logo.style.height = "50px";
-
-const header = document.querySelector("header");
-if (header) {
-    header.prepend(logo);
-} else {
-    console.error("Header element not found. Logo not added.");
-}
